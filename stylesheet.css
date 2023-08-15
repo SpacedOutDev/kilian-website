@@ -14,6 +14,14 @@
     --transitionTime: 1s;
 }
 
+.dark-mode-no-transition {
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color: rgb(112, 204, 151);
+    --invertValue: 100%;
+    --transitionTime: 0;
+}
+
 
 
 
