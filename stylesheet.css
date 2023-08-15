@@ -148,15 +148,19 @@ img {
         font-size: 6vh;
     }
     #Einf-2 {
-    font-size: 3vh;
+        font-size: 3vh;
     }
     img {
-    width: 6vh;
+        width: 6vh;
     }
     .spacingCell {
-    width: 0%;
+        width: 0%;
     }
     img {
-    width: 8vh;
+        width: 8vh;
     }
+    .circle {
+    height: 3vh;
+    width: 3vh;
+}
 }
