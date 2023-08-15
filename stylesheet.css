@@ -29,10 +29,11 @@
 body {
     background-color: var(--primary-color);
     transition: background-color var(--transitionTime);
+    display: block;
 }
 
 .topTable {
-    margin-top: 15vh;
+    padding-top: 15vh;
 }
 
 .topTable, .secondTable, .thirdTable {
@@ -44,11 +45,11 @@ body {
 }
 
 .secondTable {
-    margin-top: 20vh;
+    padding-top: 20vh;
 }
 
 .thirdTable {
-    margin-top: 10vh;
+    padding-top: 10vh;
 }
 
 #Einf-1-1 {
