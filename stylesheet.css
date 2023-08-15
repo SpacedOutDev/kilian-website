@@ -1,0 +1,162 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --tertiary-color: #146b48;
+    --invertValue: 0%;
+    --transitionTime: 1s;
+}
+
+.dark-mode {
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color: rgb(112, 204, 151);
+    --invertValue: 100%;
+    --transitionTime: 1s;
+}
+
+
+
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url("fonts/GothamMedium.ttf");
+}
+@font-face {
+    font-family: 'GothamBook';
+    src: url("fonts/GothamBook.ttf");
+}
+
+body {
+    background-color: var(--primary-color);
+    transition: background-color var(--transitionTime);
+}
+
+.topTable {
+    margin-top: 15vh;
+}
+
+.topTable, .secondTable, .thirdTable {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--secondary-color);
+    transition: color var(--transitionTime);
+}
+
+.secondTable {
+    margin-top: 20vh;
+}
+
+.thirdTable {
+    margin-top: 10vh;
+}
+
+#Einf-1-1 {
+    font-size: 6vw;
+    font-family: 'GothamMedium';
+    color: var(--tertiary-color);
+    transition: color var(--transitionTime);
+}
+
+#Einf-1-2 {
+    font-size: 6vw;
+    font-family: 'GothamMedium';
+}
+
+#Einf-2-Cell {
+    padding-top: 8vh;
+}
+
+#Einf-2 {
+    font-size: 3vw;
+    font-family: 'GothamBook';
+}
+
+img {
+    width: 6vw;
+    filter: invert(var(--invertValue));
+    transition: filter var(--transitionTime);
+}
+
+.iconCell {
+    text-align: center;
+    transition: transform .2s;
+}
+
+.spacingCell {
+    width: 30%;
+}
+
+.circle {
+    height: 3vw;
+    width: 3vw;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    transition: transform .2s;
+    right: 1vw;
+    bottom: 1vw;
+    
+    animation-duration: 2s;
+}
+
+.slideInFromBottom {
+    animation-name: slideInFromBottom;
+    animation-duration: 1.5s;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.circle:hover {
+    transform: scale(1.25);
+}
+
+.iconCell:hover {
+    transform: scale(1.25);
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(10vh)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 100vh) {
+    #Einf-1-1, #Einf-1-2{
+        font-size: 6vh;
+    }
+    #Einf-2 {
+    font-size: 3vh;
+    }
+    img {
+    width: 6vh;
+    }
+    .spacingCell {
+    width: 0%;
+    }
+    img {
+    width: 8vh;
+    }
+}
