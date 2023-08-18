@@ -22,9 +22,6 @@
     --transitionTime: 0;
 }
 
-
-
-
 @font-face {
     font-family: 'GothamMedium';
     src: url("fonts/GothamMedium.ttf");
@@ -38,6 +35,8 @@ body {
     background-color: var(--primary-color);
     transition: background-color var(--transitionTime);
     display: block;
+    overflow: auto;
+
 }
 
 .topTable {
