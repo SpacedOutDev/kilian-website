@@ -60,6 +60,13 @@ a {
     margin-top: 10vw;
 }
 
+#buildID {
+    position: fixed;
+    display: inline-block;
+    left: 0vw;
+    bottom: 0vw;
+}
+
 #introPart1 {
     font-size: 6vw;
     font-family: 'GothamMedium';
@@ -155,8 +162,8 @@ img:hover {
         padding-top: 8vh;
     }
     .circle {
-        height: 7vh;
-        width: 7vh;
+        height: 4vh;
+        width: 4vh;
         right: 2vh;
         bottom: 2vh;
     }
