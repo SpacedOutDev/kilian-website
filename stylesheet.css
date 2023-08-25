@@ -31,68 +31,56 @@
     src: url("fonts/GothamBook.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--primary-color);
     transition: background-color var(--transitionTime);
-    display: block;
-    overflow: auto;
-
 }
 
-.topTable {
-    padding-top: 15vh;
+img {
+    filter: invert(var(--invertValue));
+    filter: invert(var(--invertValue));
+    transition: filter var(--transitionTime);
+    transition: transform .2s;
+    width: 8vw;
+}
+a {
+    width: 8vw;
+    height: 8vw;
+    margin: 1vw;
 }
 
-.topTable, .secondTable, .thirdTable {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    color: var(--secondary-color);
-    transition: color var(--transitionTime);
+#iconDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
 }
 
-.secondTable {
-    padding-top: 20vh;
-}
-
-.thirdTable {
-    padding-top: 10vh;
-}
-
-#Einf-1-1 {
+#introPart1 {
     font-size: 6vw;
     font-family: 'GothamMedium';
+}
+
+#hey {
     color: var(--tertiary-color);
     transition: color var(--transitionTime);
 }
 
-#Einf-1-2 {
-    font-size: 6vw;
-    font-family: 'GothamMedium';
-}
-
-#Einf-2-Cell {
-    padding-top: 8vh;
-}
-
-#Einf-2 {
+#introPart2 {
     font-size: 3vw;
     font-family: 'GothamBook';
+    padding-top: 2vw;
 }
 
-img {
-    width: 6vw;
-    filter: invert(var(--invertValue));
-    transition: filter var(--transitionTime);
-}
-
-.iconCell {
-    text-align: center;
-    transition: transform .2s;
-}
-
-.spacingCell {
-    width: 30%;
+#textDiv {
+    padding-left: 6vw;
+    padding-top:6vw;
+    color: var(--secondary-color);
+    transition: color var(--transitionTime);
 }
 
 .circle {
@@ -105,7 +93,6 @@ img {
     transition: transform .2s;
     right: 1vw;
     bottom: 1vw;
-    
     animation-duration: 2s;
 }
 
@@ -127,8 +114,19 @@ img {
     transform: scale(1.25);
 }
 
-.iconCell:hover {
+img:hover {
     transform: scale(1.25);
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideInFromBottom {
@@ -142,33 +140,30 @@ img {
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 @media screen and (max-width: 100vh) {
-    #Einf-1-1, #Einf-1-2{
-        font-size: 6vh;
-    }
-    #Einf-2 {
-        font-size: 3vh;
-    }
-    img {
-        width: 6vh;
-    }
-    .spacingCell {
-        width: 0%;
-    }
     img {
         width: 8vh;
     }
+    #introPart1 {
+        font-size: 5vh;
+    }
+    #introPart2{
+        font-size: 3.5vh;
+        padding-top: 6vh;
+    }
+    #textDiv{
+        padding-top: 8vh;
+    }
     .circle {
-    height: 3vh;
-    width: 3vh;
-}
+        height: 7vh;
+        width: 7vh;
+        right: 2vh;
+        bottom: 2vh;
+    }
+    a {
+        width: 8vh;
+    }
+    #iconDiv {
+        margin-top: 30vh;
+    }
 }

@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>Willkommen!</title>
@@ -10,32 +10,28 @@
 
     <body>
         <div id="container">
-            <table class="topTable">
-                <tr>
-                    <td id="Einf-1-Cell" class="slideInFromBottom">
-                        <b id="Einf-1-1">Hey, </b><b id="Einf-1-2">ich bin Kilian</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="Einf-2-Cell" class="invisible">
-                        <t id="Einf-2">Ein zwanzig-jähriger Student aus Berlin</t>
-                    </td>
-                <tr>
-            </table>
-            <table class="secondTable">
-                <tr class="iconRow">
-                    <td class="spacingCell"></td>
-                    <td class="iconCell invisible" id="ic1"><a href="https://github.com/SpacedOutDev" target="_blank"><img src="assets/github.png"></a></td>
-                    <td class="iconCell invisible" id="ic2"><a href="mailto:kilian_public@yahoo.com" target="_blank"><img src="assets/email.png"></a></td>
-                    <td class="iconCell invisible" id="ic3"><a href="https://www.discord.com/users/1140907951368974336" target="_blank"><img src="assets/discord.png"></a></td>
-                    <td class="iconCell invisible" id="ic4"><a href="https://twitter.com/SpacedOutDev" target="_blank"><img src="assets/twitter.png"></a></td>
-                    <td class="spacingCell"></td>
-                </tr>
-            </table>
-        </div>
-        <span class="circle" onclick="toggleDarkMode()"></span>
-    </body>
+            <div id="textDiv">
+                <div id="introPart1" class="slideInFromBottom">
+                    <b id="hey">Hey, </b>
+                    <b id="ichBin">ich bin Kilian</b>
+                </div>
+                <div id="introPart2" class="invisible">
+                    <b>Ein zwanzig-jähriger Student aus Berlin</b>
+                </div>
+            </div>
 
+            <div id="iconDiv">            
+                <a href="https://github.com/SpacedOutDev" target="_blank" id = "ic1" class="invisible"><img src="assets/github.png"></a>
+                <a href="mailto:kilian_public@yahoo.com" target="_blank" id = "ic2" class="invisible"><img src="assets/email.png"></a>
+                <a href="https://www.discord.com/users/1140907951368974336" target="_blank" id = "ic3" class="invisible"><img src="assets/discord.png"></a>
+                <a href="https://twitter.com/SpacedOutDev" target="_blank" id = "ic4" class="invisible"><img src="assets/twitter.png"></a>
+            </div>
+
+            <div id="bottomCircleDiv">
+                <span class="circle" onclick="toggleDarkMode()"></span>
+            </div>
+        </div>
+    </body>
     <script>
         function toggleDarkMode(){
             document.body.classList.toggle("dark-mode")
@@ -52,8 +48,8 @@
         }
 
         setTimeout(function () {
-            document.getElementById("Einf-2-Cell").classList.toggle("invisible");
-            document.getElementById("Einf-2-Cell").classList.toggle("slideInFromBottom");
+            document.getElementById("introPart2").classList.toggle("invisible");
+            document.getElementById("introPart2").classList.toggle("slideInFromBottom");
         }, 800);
 
         // Fade in icons
@@ -73,5 +69,7 @@
             document.getElementById("ic4").classList.toggle("invisible");
             document.getElementById("ic4").classList.toggle("fadeIn");
         }, 2100);
+
+
     </script>
 </html>
