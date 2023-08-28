@@ -117,12 +117,15 @@ a {
     opacity: 0;
 }
 
-.circle:hover {
-    transform: scale(1.25);
-}
 
-img:hover {
-    transform: scale(1.25);
+@media (hover: hover){
+    .circle:hover {
+        transform: scale(1.25);
+    }
+
+    img:hover {
+        transform: scale(1.25);
+    }
 }
 
 
