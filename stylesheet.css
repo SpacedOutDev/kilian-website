@@ -69,7 +69,7 @@ a {
 
 #introPart1 {
     font-size: 6vw;
-    font-family: 'GothamMedium';
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #hey {
@@ -79,7 +79,7 @@ a {
 
 #introPart2 {
     font-size: 3vw;
-    font-family: 'GothamBook';
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 2vw;
 }
 
